@@ -11,6 +11,10 @@
 
 - ##### [React With Next js - Code && Demo ](https://scotch.io/tutorials/react-universal-with-next-js-server-side-react)
 
+- ##### [Next.js vs. Create React App](https://blog.logrocket.com/next-js-vs-create-react-app/)
+
+
+
 
 ---
 
