@@ -1,0 +1,13 @@
+
+- ##### [Sultan hackmd Doc ](https://hackmd.io/@r8krHwtwTuOxVcFXcTrxmA/B1gpaiqgw)
+- ##### [Next.js Crash Course - Server Side React](https://www.youtube.com/watch?v=IkOVe40Sy0U&t=1963s)
+- ##### [Next.js - Docs](https://nextjs.org/docs)
+- ##### [Next.js - learn](https://nextjs.org/learn/basics/create-nextjs-app)
+- ##### [Free Code Camp - Next.js - Hand Book](https://www.freecodecamp.org/news/the-next-js-handbook/)
+
+---
+
+# additional
+- ##### https://desosa.nl/projects/nextjs/
+- ##### [Next.js: Back to the Future](https://desosa.nl/projects/nextjs/2020/03/03/vision.html)
+- ##### [Architecting Next.js](https://desosa.nl/projects/nextjs/2020/03/14/architecture.html)
