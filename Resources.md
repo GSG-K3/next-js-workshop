@@ -13,6 +13,10 @@
 
 - ##### [Next.js vs. Create React App](https://blog.logrocket.com/next-js-vs-create-react-app/)
 
+- ##### [Perform client-side data Fetching Next.js](https://stackoverflow.com/questions/60323380/how-to-perform-client-side-data-fetching-in-next-js)
+
+
+
 
 
 
