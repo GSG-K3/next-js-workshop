@@ -2,8 +2,8 @@
 
 ## Menu
    - [Learning Outcomes](./learning-outcomes.md)
-   - [Resources](./resources)
-   - [Project](./project.md)
+   - [Resources](./Resources.md)
+   - [Project](./Project.md)
   
   ## Schedule
   
@@ -11,7 +11,7 @@
   
   - 9:45 - 11:45  --[Pages and Data fetching](./Pages-and-Data-fetching.md)
   
-  - 12:00 - 12:30 --[css And Assets](./css.md)
+  - 12:00 - 12:30 --[css And Assets](./css-and-Assets.md)
   
      ---- BREAK ----
   
