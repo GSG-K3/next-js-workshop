@@ -9,7 +9,10 @@
 
 # What is Next.js
 
-Next js is a special JavaScript framework for React to build a modern high scalability application. the main reason for Next js is to reduce content load time and javascript files, solve the Content SEO issue.
+Next js is a special JavaScript framework for React to build a modern high scalability application created by Zeit, to build server-side rendering web applications using React, the main reason for Next js is to reduce content load time and javascript files, solve the Content SEO issue, so the Solution is server rendering.
+
+the Next js Provide powerful features that make Next js the first option for building your web application.
+
 
 
 
