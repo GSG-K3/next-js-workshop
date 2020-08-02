@@ -28,3 +28,4 @@
 - ##### [Architecting Next.js](https://desosa.nl/projects/nextjs/2020/03/14/architecture.html)
 ### Advance topics
 - https://github.com/Vadorequest/serverless-with-next5-boilerplate
+- https://nextjs.org/docs/advanced-features/custom-server
