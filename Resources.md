@@ -26,3 +26,5 @@
 - ##### https://desosa.nl/projects/nextjs/
 - ##### [Next.js: Back to the Future](https://desosa.nl/projects/nextjs/2020/03/03/vision.html)
 - ##### [Architecting Next.js](https://desosa.nl/projects/nextjs/2020/03/14/architecture.html)
+### Advance topics
+- https://github.com/Vadorequest/serverless-with-next5-boilerplate
