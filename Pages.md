@@ -14,11 +14,11 @@ in react we had use the react-router-dom to create pages and navigate between th
 
 ![the react routing](https://user-images.githubusercontent.com/57558867/89289277-a19ed680-d65f-11ea-84d8-91ff7168343c.png)
 
-in next.js it's defferent , //about it ..
+in next.js it's different , //about it ..
 
 ![pages](https://user-images.githubusercontent.com/57558867/89280625-8d53dd00-d651-11ea-972f-ce9687afbaa8.png)
 
-// some examples
+// some examples....
 
 `pages/index` = `/`
 
