@@ -10,8 +10,7 @@ The main difference between React and  Next.js is where the render happens
 
 # React Rendering Vs Next.js Rendering 
 
-- ### React Rendering 
+
 ![no-pre-rendering](https://user-images.githubusercontent.com/7718220/89286863-98ac0600-d65b-11ea-82b2-44fc229c26bb.png)
 
-- ### Next.js Rendering
 ![pre-rendering](https://user-images.githubusercontent.com/7718220/89287169-1f60e300-d65c-11ea-8996-03d3f6d3856e.png)
