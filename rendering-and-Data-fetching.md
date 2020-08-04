@@ -49,3 +49,23 @@ Next js recommend using Static Generation (with and without data , we will take 
     
 On the other hand, Server-side Rendering is a good idea if your a page shows frequently updated data , and the page content changes on every request,
 In that case, you can use Server-Side Rendering. It will be slower, but the pre-rendered page will always be up-to-date.
+
+# Working with Data Fetching
+
+Data Ferching related with Pre-rendering , we talked about Pre-rendering (Static Generation and Server-side Rendering) , and we’ll talk in depths about data fetching strategies for each case .
+We’ll talk about the three unique Next.js functions you can use to fetch data for pre-rendering:
+
+ - #### `getStaticProps` : using with Static Generation to Fetch data at build time.
+ - #### `getStaticPaths` : using with Static Generation in dynamic routes to define a list of paths that have to be rendered to HTML at build time.
+ - #### `getServerSideProps` : using with Server-side Rendering to  Fetch data on each request.
+
+# Static Generation types
+
+![static-generation-without-data](https://user-images.githubusercontent.com/7718220/89324424-ee9aa100-d68f-11ea-9aab-764b93d3783f.png)
+
+
+![static-generation-with-data](https://user-images.githubusercontent.com/7718220/89324469-0114da80-d690-11ea-8aaf-570ee06937b0.png)
+
+
+
+
