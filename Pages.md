@@ -1,12 +1,13 @@
 # pages
 
+Next.js has a file-system based router built on the concept of pages, When a file is added to the pages directory it's automatically available as a route,
+The files inside the pages directory can be used to define most common patterns.
+
+
 pages is a direcotry but it's not like other direcotries
 
 ![pagess](https://user-images.githubusercontent.com/57558867/89291685-a6fe2000-d663-11ea-8549-3086c52c99a1.png)
 
-Next.js has a file-system based router built on the concept of pages,
-When a file is added to the pages directory it's automatically available as a route,
-The files inside the pages directory can be used to define most common patterns.
 
 ## REACT-ROUTER-DOM VS NEXT.JS ROUTING 
 in react we had use the react-router-dom to create pages and navigate between them 
