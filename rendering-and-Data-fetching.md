@@ -4,8 +4,8 @@ is the most important feature in next.js , This means that Next.js generates HTM
 
 The main difference between React and  Next.js is where the render happens
 
-    - in React the render happen in browser
-    - in Next Js the render happen in Server 
+    - in React the render happens on browser
+    - in Next Js the render happens on Server 
 
 
 # React Rendering Vs Next.js Rendering 
