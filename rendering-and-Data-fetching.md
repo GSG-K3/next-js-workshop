@@ -36,7 +36,10 @@ The difference is in when it generates the HTML for a page.
 
 # When to Use Static Generation VS Server-side Rendering
 
-Next js recommend using Static Generation (with and without data , we will take about it later)  which makes it much faster than having a server render the page on every request, Static Generation is used with Static html pages and the pages that contains a data that doesn't change frequently
+Next js recommend using Static Generation (with and without data , we will take about it later)  which makes it much faster than having a server render the page on every request.
+#### Static Generation used with : 
+    - Static html pages
+    - the pages that contains a data that doesn't change frequently
 
 #### You can use Static Generation for many types of pages, including:
 
