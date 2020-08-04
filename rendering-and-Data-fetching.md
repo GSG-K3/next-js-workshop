@@ -46,4 +46,6 @@ Next js recommend using Static Generation (with and without data , we will take 
     - Marketing pages
     - Blog posts
     - Help and documentation
-
+    
+On the other hand, Server-side Rendering is a good idea if your a page shows frequently updated data , and the page content changes on every request,
+In that case, you can use Server-Side Rendering. It will be slower, but the pre-rendered page will always be up-to-date.
