@@ -59,6 +59,8 @@ We’ll talk about the three unique Next.js functions you can use to fetch data 
  - #### `getStaticPaths` : using with Static Generation in dynamic routes to define a list of paths that have to be rendered to HTML at build time.
  - #### `getServerSideProps` : using with Server-side Rendering to  Fetch data on each request.
 
+ ###### we will take in depths about this unique Next.js functions
+
 # Static Generation types
 
 ![static-generation-without-data](https://user-images.githubusercontent.com/7718220/89324424-ee9aa100-d68f-11ea-9aab-764b93d3783f.png)
@@ -66,6 +68,58 @@ We’ll talk about the three unique Next.js functions you can use to fetch data 
 
 ![static-generation-with-data](https://user-images.githubusercontent.com/7718220/89324469-0114da80-d690-11ea-8aaf-570ee06937b0.png)
 
+# `getStaticProps` Function
 
+#### `getStaticProps` tell Next.js: “Hey, this page has some data dependencies — so when you pre-render this page at build time, make sure to resolve them first!”
+
+to run `getStaticProps` we must export an `async function` called `getStaticProps` from a page, the data return from functions will uaing as props by Next.js in pre-render of page at build time.
+
+In the following example we will export `async function getStaticProps` to fetch all post from [json place holder](https://jsonplaceholder.typicode.com/posts).
+the Function take `context` parameter and return `posts` as props to using in component to build post List 
+           
+```js
+import axios from 'axios';
+import Link from 'next/link';
+
+// get all post from json place holder Api to build Post Link List
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries.
+export async function getStaticProps(context) {
+  const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
+  return {
+  // will be passed to the page component as props
+    props: { posts: res.data },
+  };
+}
+
+// React Hooks Component take props and build List of Post 
+const Index = (props) => {
+
+  // check if props contains posts object    
+  if (!props.posts) {
+    return ( <h1>There is no any Post</h1> );
+  }
+  
+  return (
+      <div>
+        <h1>Welcome Blog Posts Next Js App </h1>
+        // Build List of Posts 
+        <ul>
+          {props.posts.map((post, index) => {
+            return (
+              <li key={index}>
+               <Link href={`/posts/${post.id}`}>{post.title}</Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+  );
+};
+
+export default Index;
+
+```
 
 
