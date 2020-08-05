@@ -215,10 +215,11 @@ If fallback is true, then the behavior of `getStaticProps` changes:
 - At the same time, Next.js adds this path to the list of pre-rendered pages. Subsequent requests to the same path will serve the generated page, just like other pages pre-rendered at build time.
 
 
-# When is fallback: true useful?
+### When is fallback: true useful?
 fallback: true is useful if your app has a very large number of static pages that depend on data (think: a very large e-commerce site). You want to pre-render all product pages, but then your builds would take forever.
 
 Instead, you may statically generate a small subset of pages and use fallback: true for the rest. When someone requests a page that’s not generated yet, the user will see the page with a loading indicator. Shortly after, `getStaticProps` finishes and the page will be rendered with the requested data. From now on, everyone who requests the same page will get the statically pre-rendered page. This ensures that users always have a fast experience while preserving fast builds and the benefits of Static Generation.
+
 
 
 
@@ -247,3 +248,6 @@ Because `getServerSideProps` is called at request time, its take parameter (cont
 - req: The HTTP IncomingMessage object.
 - res: The HTTP response object.
 - query: The query string.
+
+### When should I use getServerSideProps?
+You should use `getServerSideProps` only if you need to pre-render a page whose data must be fetched at request time. The first Time will be slower than getStaticProps because the server must compute the result on every request, and the result cannot be cached by a CDN without extra configuration.
