@@ -66,5 +66,7 @@ export default HomePage
 - inside this folder add a function that returns any string , and don't forget to export this function 
 - now check your `localhost:3000/about` *and make sure that the file name matches the path name*
 
-  it's there :fire:  just as easy as that
+  it's there :fire: just as easy as that
+  
+  
   we will talk about *Index routes* and *Nested routes* later in this workshop , but this should give you a general idea of how next.js Routing work.
