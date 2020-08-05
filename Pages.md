@@ -16,6 +16,8 @@ in react we used the react-router-dom to create pages and navigate between them
 in next.js it's different , //about it ..
 
 in `pages` every file is mapped to a bath
+
+
 ![pagessssssyes](https://user-images.githubusercontent.com/57558867/89456497-a2715e80-d76c-11ea-8f46-2c8bb72fa551.png)
 
 ![localhostpages](https://user-images.githubusercontent.com/57558867/89456493-a1403180-d76c-11ea-8ed8-4f9d3ec62331.png)
