@@ -13,20 +13,15 @@ in react we used the react-router-dom to create pages and navigate between them
 
 ![the react routing](https://user-images.githubusercontent.com/57558867/89289277-a19ed680-d65f-11ea-84d8-91ff7168343c.png)
 
-in next.js it's different , //about it ..
+in next.js it's different , a page is a React Component exported from a file in the pages directory. Each page is associated with a route based on its file name.
 
-in `pages` every file is mapped to a bath
+**in `pages` every file is mapped to a bath**
 
 
-![pagessssssyes](https://user-images.githubusercontent.com/57558867/89456497-a2715e80-d76c-11ea-8f46-2c8bb72fa551.png)
+   ![pagessssssyes](https://user-images.githubusercontent.com/57558867/89456497-a2715e80-d76c-11ea-8f46-2c8bb72fa551.png)
 
-![localhostpages](https://user-images.githubusercontent.com/57558867/89456493-a1403180-d76c-11ea-8ed8-4f9d3ec62331.png)
+   ![localohostbaby](https://user-images.githubusercontent.com/57558867/89462664-70fd9080-d776-11ea-95ef-64f84e8f5319.png)
 
-// some examples....
-
-`pages/index` = `"/"`
-
-`pages/about/index.js` = `"/about"`
 ### try it by yourself 
 - clone this repo 
 - cd in to the next-js-workshop then cd example then pages-example 
