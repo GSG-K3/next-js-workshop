@@ -228,3 +228,22 @@ using `getServerSideProps` (Server-side Rendering) if we  will need to fetch dat
 to run `getServerSideProps` we must  export an `async function` called `getServerSideProps` from a page, Next.js will pre-render this page on each request using the data returned by `getServerSideProps`.
 
 ![server-side-rendering-with-data](https://user-images.githubusercontent.com/7718220/89445002-405c2d80-d75b-11ea-8dd2-52fca870dbdc.png)
+
+```js
+
+// Demo to get User Profile Data by userId at Server Side 
+export async function getServerSideProps(context) {
+  const res = await axios.get(`/profile/${context.params.userId}`);
+  return {
+    props: { posts: res.data },
+  };
+}
+
+```
+
+Because `getServerSideProps` is called at request time, its take parameter (context) object containing the following keys :
+
+- If the page uses dynamic routes name like `[userId].js` , then params will look like `params : { userId: ... }`.
+- req: The HTTP IncomingMessage object.
+- res: The HTTP response object.
+- query: The query string.
