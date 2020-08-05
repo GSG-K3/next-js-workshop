@@ -129,6 +129,7 @@ export default Index;
 by using `revalidate`  the list of blog posts will be re-validated once per 10 second; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
 
 
+
 # When should I use `getStaticProps` ?
 
 - The data required to render the page is available at build time ahead of a user’s request.
@@ -137,3 +138,9 @@ by using `revalidate`  the list of blog posts will be re-validated once per 10 s
 - The page must be pre-rendered (for SEO) and be very fast.
 
 
+
+
+# Statically Generates both HTML and JSON
+#### When a page with `getStaticProps` is pre-rendered at build time, in addition to the HTML file, Next.js generates a JSON file holding the result of running getStaticProps.
+
+This JSON file will be used in client-side routing through `next/link` or `next/router` to page . When you navigate to a page that’s pre-rendered using getStaticProps, Next.js fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used.
