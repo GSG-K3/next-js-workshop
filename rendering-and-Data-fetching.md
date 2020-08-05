@@ -194,3 +194,31 @@ Then Next.js will statically generate `posts/1` ,  `posts/2` , `posts/3` , `post
 > [id].js -->  { params: { id: '1' } }
 
 > [pid].js --> { params: { pid: '1' } }
+
+# fallback
+This is The boolean property must returned from  `getStaticPaths`
+
+
+#### `fallback: false`
+
+If fallback is false, then any paths not returned by `getStaticPaths` will result in a 404 page. You can do this if you have a small number of paths to pre-render - so they are all statically generated during build time. It’s also useful when the new pages are not added often. If you add more items to the data source and need to render the new pages, you’d need to run the build again.
+
+
+#### `fallback: true`
+
+If fallback is true, then the behavior of `getStaticProps` changes:
+
+- The paths returned from `getStaticPaths` will be rendered to HTML at build time.
+- The paths that have not been generated at build time will not result in a 404 page. 
+- In the background, Next.js will statically generate the requested path HTML and JSON. This includes running `getStaticProps`.
+- When that’s done, the browser receives the JSON for the generated path. This will be used to automatically render the page with the required props. From the user’s perspective, the page will be swapped from the fallback page to the full page.
+- At the same time, Next.js adds this path to the list of pre-rendered pages. Subsequent requests to the same path will serve the generated page, just like other pages pre-rendered at build time.
+
+
+# When is fallback: true useful?
+fallback: true is useful if your app has a very large number of static pages that depend on data (think: a very large e-commerce site). You want to pre-render all product pages, but then your builds would take forever.
+
+Instead, you may statically generate a small subset of pages and use fallback: true for the rest. When someone requests a page that’s not generated yet, the user will see the page with a loading indicator. Shortly after, `getStaticProps` finishes and the page will be rendered with the requested data. From now on, everyone who requests the same page will get the statically pre-rendered page. This ensures that users always have a fast experience while preserving fast builds and the benefits of Static Generation.
+
+
+
