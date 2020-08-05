@@ -144,3 +144,25 @@ by using `revalidate`  the list of blog posts will be re-validated once per 10 s
 #### When a page with `getStaticProps` is pre-rendered at build time, in addition to the HTML file, Next.js generates a JSON file holding the result of running getStaticProps.
 
 This JSON file will be used in client-side routing through `next/link` or `next/router` to page . When you navigate to a page that’s pre-rendered using getStaticProps, Next.js fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used.
+
+
+
+# `getStaticPaths` (Static Generation)
+
+`getStaticPaths` using with page has dynamic routes, this function is define a list of paths that have to be rendered to HTML at build time.
+
+to run `getStaticPaths` we must  export an `async function` called `getStaticPaths` from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by getStaticPaths.
+
+```js
+
+export async function getStaticPaths() {
+  const res = await axios('https://jsonplaceholder.typicode.com/posts');
+  
+  //to build path of all post
+  const paths = res.data.map((post) => {
+    return `/posts/${post.id}`;
+  });
+  return { paths, fallback: true };
+}
+
+```
