@@ -168,7 +168,10 @@ export async function getStaticPaths() {
 
 ```
 
-The `getStaticPaths` function at least must return The `paths` key , The paths key determines which paths will be pre-rendered. 
+#### The `getStaticPaths` function  must return The `paths` and `fallback` key 
+
+# paths
+The paths key determines which paths will be pre-rendered
 
 For example, suppose that you have a page that uses dynamic routes named `/posts/[id].js`. If you export `getStaticPaths` from this page and return the following for paths:
 
