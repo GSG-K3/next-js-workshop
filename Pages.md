@@ -19,8 +19,34 @@ in next.js it's different , //about it ..
 
 // some examples....
 
-`pages/index` = `/`
+`pages/index` = `"/"`
 
-`pages/about/index.js` = `/about`
+`pages/about/index.js` = `"/about"`
 
-// clone the repo ...etc
+// clone the repo 
+- clone this repo 
+- cd in to the next-js-workshop then cd example then pages-example 
+- run the command npm init -y 
+- run the command npm install next react react-dom
+- Open package.json and add the following scripts:
+"scripts": {
+  "dev": "next",
+  "build": "next build",
+  "start": "next start"
+}
+- creat a folder with the name `pages`
+- inside this folder add a file with the name `index.js`
+- inside this file add this code 
+```
+function HomePage() {
+  return <h1>Welcome to Next.js!</h1>
+}
+
+export default HomePage
+```
+- check the `localhost:3000`
+- now create a folder with the name of `about.js`
+- inside this folder add a function that returns any string and don't forget to export this function 
+- now check your `localhost:3000/about` 
+
+it's there :) 
