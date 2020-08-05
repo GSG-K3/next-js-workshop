@@ -26,13 +26,19 @@ in next.js it's different , //about it ..
 - clone this repo 
 - cd in to the next-js-workshop then cd example then pages-example 
 - run the command npm install
-- run the command npm install next react react-dom
+- run the command 
+```
+npm install next react react-dom
+```
 - Open package.json and add the following scripts:
+```
 "scripts": {
   "dev": "next",
   "build": "next build",
   "start": "next start"
 }
+```
+- now you can run the project by using the command `npm run dev` 
 - creat a folder with the name `pages`
 - inside this folder add a file with the name `index.js`
 - inside this file add this code 
