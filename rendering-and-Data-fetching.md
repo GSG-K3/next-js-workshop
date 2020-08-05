@@ -149,9 +149,9 @@ This JSON file will be used in client-side routing through `next/link` or `next/
 
 # `getStaticPaths` (Static Generation)
 
-`getStaticPaths` using with page has dynamic routes, this function is define a list of paths that have to be rendered to HTML at build time.
+`getStaticPaths` using with page has dynamic routes, this function is define a list of all paths that have to be rendered to HTML at build time.
 
-to run `getStaticPaths` we must  export an `async function` called `getStaticPaths` from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by getStaticPaths.
+to run `getStaticPaths` we must  export an `async function` called `getStaticPaths` from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by `getStaticPaths`.
 
 ```js
 
@@ -162,7 +162,29 @@ export async function getStaticPaths() {
   const paths = res.data.map((post) => {
     return `/posts/${post.id}`;
   });
+  // return all paths to build html file 
   return { paths, fallback: true };
 }
 
 ```
+
+The `getStaticPaths` function at least must return The `paths` key , The paths key determines which paths will be pre-rendered. 
+
+For example, suppose that you have a page that uses dynamic routes named `/posts/[id].js`. If you export `getStaticPaths` from this page and return the following for paths:
+
+```js
+// note thant the proporty in params same name with 
+return {
+  paths: [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    { params: { id: '3' } },
+    { params: { id: '4' } },
+    ....
+  ],
+}
+```
+ **note that the Name of property id  in params same name with dynamic routes named**
+> [id].js -->  { params: { id: '1' } }
+
+> [pid].js --> { params: { pid: '1' } }
