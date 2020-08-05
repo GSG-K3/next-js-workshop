@@ -184,6 +184,9 @@ return {
   ],
 }
 ```
+
+Then Next.js will statically generate `posts/1` ,  `posts/2` , `posts/3` , `posts/4` , ... at build time using the page component in `pages/posts/[id].js`.
+
  **note that the Name of property id  in params same name with dynamic routes named**
 > [id].js -->  { params: { id: '1' } }
 
