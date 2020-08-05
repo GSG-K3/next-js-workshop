@@ -222,3 +222,9 @@ Instead, you may statically generate a small subset of pages and use fallback: t
 
 
 
+# `getServerSideProps` (Server-side Rendering)
+ 
+using `getServerSideProps` (Server-side Rendering) if we  will need to fetch data at request time instead of at build time ,
+to run `getServerSideProps` we must  export an `async function` called `getServerSideProps` from a page, Next.js will pre-render this page on each request using the data returned by `getServerSideProps`.
+
+![server-side-rendering-with-data](https://user-images.githubusercontent.com/7718220/89445002-405c2d80-d75b-11ea-8dd2-52fca870dbdc.png)
