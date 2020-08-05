@@ -22,11 +22,10 @@ in next.js it's different , //about it ..
 `pages/index` = `"/"`
 
 `pages/about/index.js` = `"/about"`
-
-// clone the repo 
+### try it by yourself 
 - clone this repo 
 - cd in to the next-js-workshop then cd example then pages-example 
-- run the command npm init -y 
+- run the command npm install
 - run the command npm install next react react-dom
 - Open package.json and add the following scripts:
 "scripts": {
