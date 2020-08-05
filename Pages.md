@@ -3,8 +3,11 @@
 
 pages is a directory but it's not like the other directories
 
+Next.js has a file-system based router built on the concept of pages.
 
-Next.js has a file-system based router built on the concept of pages, When a file is added to the pages directory it's automatically available as a route,
+When a file is added to the pages directory it's automatically available as a route.
+
+
 The files inside the pages directory can be used to define most common patterns.
 
 
@@ -13,9 +16,9 @@ in react we used the react-router-dom to create pages and navigate between them
 
 ![the react routing](https://user-images.githubusercontent.com/57558867/89289277-a19ed680-d65f-11ea-84d8-91ff7168343c.png)
 
-in next.js it's different , a page is a react component exported from a file in the pages directory. Each page is associated with a route based on its file name.
+in next.js it's different . a page is a react component exported from a file in the pages directory. Each page is associated with a route based on its file name.
 
-**in `pages` every file is mapped to a bath**
+**in `pages` every file is mapped to a path**
 
 
    ![pagessssssyes](https://user-images.githubusercontent.com/57558867/89456497-a2715e80-d76c-11ea-8f46-2c8bb72fa551.png)
@@ -39,7 +42,7 @@ install nextjs and react
 npm install next react react-dom
 ```
 - Open package.json and add the following scripts:
-```
+```js 
 "scripts": {
   "dev": "next",
   "build": "next build",
@@ -54,7 +57,7 @@ pages/index.js = "/"
 ```
 inside the `index.js file` add the following code :
 
-```
+```js
 function HomePage() {
   return <h1>Welcome to Next.js!</h1>
 }
@@ -69,4 +72,4 @@ export default HomePage
   it's there :fire: just as easy as that
   
   
-  we will talk about *Index routes* and *Nested routes* later in this workshop , but this should give you a general idea of how next.js Routing work.
+  we will talk about *Index routes* and *Nested routes* later in this workshop , but this should give you a general idea of how next.js Routing works.
