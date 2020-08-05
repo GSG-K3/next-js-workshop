@@ -90,6 +90,10 @@ export async function getStaticProps(context) {
   return {
   // will be passed to the page component as props
     props: { posts: res.data },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 second
+    revalidate: 10, // In seconds
   };
 }
 
@@ -121,6 +125,8 @@ const Index = (props) => {
 export default Index;
 
 ```
+
+by using `revalidate`  the list of blog posts will be re-validated once per 10 second; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
 
 
 # When should I use `getStaticProps` ?
