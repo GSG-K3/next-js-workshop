@@ -195,8 +195,10 @@ to run `getStaticPaths` we must  export an `async function` called `getStaticPat
 ![id-post](https://user-images.githubusercontent.com/7718220/89523013-d8edbe80-d7ea-11ea-87bb-3ef293fd0b1e.jpg)
 
 
-
 ```js
+
+import axios from 'axios';
+import { useRouter } from 'next/router';
 
 // build all path for post 
 export async function getStaticPaths() {
