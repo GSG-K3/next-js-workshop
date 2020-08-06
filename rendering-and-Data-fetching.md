@@ -1,11 +1,11 @@
 
 
 # Pre-rendering 
-is the most important feature in next.js , This means that Next.js generates HTML for each page in server side , instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO. Each generated HTML is associated with minimal JavaScript code necessary for that page.
+is the most important feature in next.js, This means that Next.js generates HTML for each page in server-side , instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO. Each generated HTML is associated with minimal JavaScript code necessary for that page.
 
 The main difference between React and  Next.js is where the render happens
 
-    - in React the render happens on browser
+    - in React the render happens on the browser
     - in Next Js the render happens on Server 
 
 
@@ -14,7 +14,7 @@ The main difference between React and  Next.js is where the render happens
 
 ![no-pre-rendering](https://user-images.githubusercontent.com/7718220/89286863-98ac0600-d65b-11ea-82b2-44fc229c26bb.png)
 
-![pre-rendering](https://user-images.githubusercontent.com/7718220/89287169-1f60e300-d65c-11ea-8996-03d3f6d3856e.png)
+![Pre-rendering](https://user-images.githubusercontent.com/7718220/89287169-1f60e300-d65c-11ea-8996-03d3f6d3856e.png)
 
 
 # Rre-rendering Types
@@ -53,12 +53,12 @@ In that case, you can use Server-Side Rendering. It will be slower, but the pre-
 
 # Working with Data Fetching
 
-Data Ferching related with Pre-rendering , we talked about Pre-rendering (Static Generation and Server-side Rendering) , and we’ll talk in depths about data fetching strategies for each case .
+we talked about Pre-rendering (Static Generation and Server-side Rendering) , and now we’ll talk in depths about data fetching strategies for each case .
 We’ll talk about the three unique Next.js functions you can use to fetch data for pre-rendering:
 
- - #### `getStaticProps` : using with Static Generation to Fetch data at build time.
- - #### `getStaticPaths` : using with Static Generation in dynamic routes to define a list of paths that have to be rendered to HTML at build time.
- - #### `getServerSideProps` : using with Server-side Rendering to  Fetch data on each request.
+ - #### `getStaticProps` : use with Static Generation to Fetch data at build time.
+ - #### `getStaticPaths` : use with Static Generation in dynamic routes to define a list of paths that have to be rendered to HTML at build time.
+ - #### `getServerSideProps` : use with Server-side Rendering to  Fetch data on each request.
 
  ###### we will take in depths about this unique Next.js functions
 
@@ -76,7 +76,7 @@ We’ll talk about the three unique Next.js functions you can use to fetch data 
 to run `getStaticProps` we must export an `async function` called `getStaticProps` from a page, the data return from functions will uaing as props by Next.js in pre-render of page at build time.
 
 In the following example we will export `async function getStaticProps` to fetch all post from [json place holder](https://jsonplaceholder.typicode.com/posts).
-the Function take `context` parameter and return `posts` as props to using in component to build post List 
+the Function takes `context` parameter and returns `posts` and `revalidate` as props to use in the component to build post List 
            
 ```js
 import axios from 'axios';
@@ -127,14 +127,14 @@ export default Index;
 
 ```
 
-by using `revalidate`  the list of blog posts will be re-validated once per 10 second; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
+by using `revalidate`  the list of blog posts will be re-validated once per 10 seconds; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
 
 
 
-# When should I use `getStaticProps` ?
+# When should I use `getStaticProps`?
 
 - The data required to render the page is available at build time ahead of a user’s request.
-- The data comes from extarnal sources external sources Like API.
+- The data comes from external sources Like API.
 - The data can be publicly cached (not user-specific).
 - The page must be pre-rendered (for SEO) and be very fast.
 
