@@ -92,7 +92,7 @@ export default HomePage
 import Link from 'next/link'
 ```
 - add a button element (and don't forget to add a parent element)
-- add the Link element inside the button and link it to the home page 
+- add the Link element inside the button then add the path 
 ```js
 <button>
  <Link href = '/'>
