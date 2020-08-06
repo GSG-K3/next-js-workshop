@@ -32,18 +32,13 @@ in next.js it's different . a page is a react component exported from a file in 
  
 
 # try it by yourself 
-- clone this repo 
-- run these commands :
-```
-cd next-js-workshop
-cd example
-cd pages-example 
-```
-install dependencies :
+- create a folder and open it with vs Code 
+
+install package.json :
 ```
 npm init -y
 ```
-install nextjs and react :
+install next.js and react :
 ```
 npm install next react react-dom
 ```
@@ -55,13 +50,12 @@ npm install next react react-dom
   "start": "next start"
 }
 ```
-- you can now run the project by using the command `npm run dev` 
-- inside the pages folder you can find the `index.js` file that is the default path and will include our home page 
-
+- create a folder withthe name of `pages` 
+- inside this folder create `index.js` file (this file represents our home page)
 ```
 pages/index.js = "/"
 ```
-inside the `index.js file` add the following code :
+- inside the `index.js file` add the following code :
 
 ```js
 function HomePage() {
@@ -70,12 +64,14 @@ function HomePage() {
 
 export default HomePage
 ```
+- you can now run the project by using the command `npm run dev`  
 - check the `localhost:3000`
 - now create a folder with the name of `about.js`
 - inside this folder add a function that returns any string , and don't forget to export this function 
 - now check your `localhost:3000/about` *and make sure that the file name matches the path name*
 
   it's there :fire: just as easy as that
+  
 ### for the Link let's add a button that return us to home page 
 #### in the about page :
 - import Link 
