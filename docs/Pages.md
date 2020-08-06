@@ -31,7 +31,7 @@ in next.js it's different . a page is a react component exported from a file in 
   **href** is the path inside `pages` directory. This is the only required prop.
  
 
-# try it by yourself 
+# Create your first next.js app :sparkles:
 - create a folder and open it with vs Code 
 
 install package.json :
