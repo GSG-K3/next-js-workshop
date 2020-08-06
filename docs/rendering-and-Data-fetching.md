@@ -13,9 +13,10 @@ The main difference between React and  Next.js is where the render happens
 # React Rendering Vs Next.js Rendering 
 
 
-![no-pre-rendering](https://user-images.githubusercontent.com/7718220/89286863-98ac0600-d65b-11ea-82b2-44fc229c26bb.png)
+<img src="https://user-images.githubusercontent.com/7718220/89286863-98ac0600-d65b-11ea-82b2-44fc229c26bb.png" height=400 width=800>
 
-![Pre-rendering](https://user-images.githubusercontent.com/7718220/89287169-1f60e300-d65c-11ea-8996-03d3f6d3856e.png)
+<img src="https://user-images.githubusercontent.com/7718220/89287169-1f60e300-d65c-11ea-8996-03d3f6d3856e.png" height=400 width=800>
+
 
 
 # Rre-rendering Types
@@ -30,10 +31,10 @@ The difference is in when it generates the HTML for a page.
 - Static Generation is the pre-rendering method that generates the HTML at build time, and reused Html page  on each request.
 - Server-side Rendering is the pre-rendering method that generates the HTML on each request.
  
- ![static-generation](https://user-images.githubusercontent.com/7718220/89292420-06106480-d665-11ea-96f0-f65b460fc4ef.png)
-
-
-![server-side-rendering](https://user-images.githubusercontent.com/7718220/89292476-16284400-d665-11ea-9de4-9654c2ce7c57.png)
+ 
+ <img src="https://user-images.githubusercontent.com/7718220/89292420-06106480-d665-11ea-96f0-f65b460fc4ef.png" height=400 width=800>
+ 
+ <img src="https://user-images.githubusercontent.com/7718220/89292476-16284400-d665-11ea-9de4-9654c2ce7c57.png" height=400 width=800>
 
 
 # When to Use Static Generation VS Server-side Rendering
@@ -65,10 +66,9 @@ We’ll talk about the three unique Next.js functions you can use to fetch data 
 
 # Static Generation types
 
-![static-generation-without-data](https://user-images.githubusercontent.com/7718220/89324424-ee9aa100-d68f-11ea-9aab-764b93d3783f.png)
-
-
-![static-generation-with-data](https://user-images.githubusercontent.com/7718220/89324469-0114da80-d690-11ea-8aaf-570ee06937b0.png)
+ <img src="https://user-images.githubusercontent.com/7718220/89324424-ee9aa100-d68f-11ea-9aab-764b93d3783f.png" height=400 width=800>
+ 
+ <img src="https://user-images.githubusercontent.com/7718220/89324469-0114da80-d690-11ea-8aaf-570ee06937b0.png" height=400 width=800>
 
 # `getStaticProps` Function
 
@@ -154,9 +154,7 @@ export default Index;
 
 ###### opne the browser and enter http://localhost:3000/ , you must see list of post 
 
-![nerxt-post](https://user-images.githubusercontent.com/7718220/89521700-a773f380-d7e8-11ea-969f-4bee8f7c6302.jpg)
-
-
+ <img src="https://user-images.githubusercontent.com/7718220/89521700-a773f380-d7e8-11ea-969f-4bee8f7c6302.jpg" height=400 width=800>
 
 ###### Note: by using `revalidate`  the list of blog posts will be re-validated once per 10 seconds; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
 
@@ -193,8 +191,8 @@ to run `getStaticPaths` we must  export an `async function` called `getStaticPat
  - in `[id].js` file add the code below to create all paths of the post and get data by the id of each post
 
 
-![id-post](https://user-images.githubusercontent.com/7718220/89523013-d8edbe80-d7ea-11ea-87bb-3ef293fd0b1e.jpg)
 
+![post-folder](https://user-images.githubusercontent.com/7718220/89523013-d8edbe80-d7ea-11ea-87bb-3ef293fd0b1e.jpg)
 
 ```js
 
@@ -309,7 +307,7 @@ Instead, you may statically generate a small subset of pages and use fallback: t
 using `getServerSideProps` (Server-side Rendering) if we  will need to fetch data at request time instead of at build time ,
 to run `getServerSideProps` we must  export an `async function` called `getServerSideProps` from a page, Next.js will pre-render this page on each request using the data returned by `getServerSideProps`.
 
-![server-side-rendering-with-data](https://user-images.githubusercontent.com/7718220/89445002-405c2d80-d75b-11ea-8dd2-52fca870dbdc.png)
+<img src="https://user-images.githubusercontent.com/7718220/89445002-405c2d80-d75b-11ea-8dd2-52fca870dbdc.png" height=400 width=800>
 
 ```js
 
