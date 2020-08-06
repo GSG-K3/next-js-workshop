@@ -65,7 +65,7 @@ In our case we have a list of meals images on home page taken from an array with
 2. Then, add a link around `img` with meal name as a url parameter like this:
 
 ``` jsx
-   <Link href='/[meal]' as={`/${meal.name}`}>
+   <Link href='/meals/[meal]' as={`/meals/${meal.name}`}>
             <img src={meal.imageUrl} />
     </Link>
 ```
@@ -90,7 +90,7 @@ export default function Home() {
     >
       {data.map((meal) => (
         <div key={meal.id}>
-          <Link href='/[meal]' as={`/${meal.name}`}>
+          <Link href='/meals/[meal]' as={`/meals/${meal.name}`}>
             <img src={meal.imageUrl} />
           </Link>
         </div>
@@ -131,6 +131,7 @@ export default (req, res) => {
 };
 
 ```
+Now browse `http://localhost:3000/api/hola` <br>
 **GREAT! Now you made your first API using Next.js**
 
 ![](https://media1.tenor.com/images/d56d60bcc0df5e2e9f0828a28577ed8e/tenor.gif?itemid=12345145)
