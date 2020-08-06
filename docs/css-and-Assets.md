@@ -1,4 +1,4 @@
-# css-and-Assets in next-js
+# CSS and Assets in Next.js
 
 ## Menu
   #### - [Built-In CSS Support](./CSS.md)
