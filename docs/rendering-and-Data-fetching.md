@@ -134,7 +134,6 @@ const Index = (props) => {
   return (
       <div>
         <h1>Welcome Blog Posts Next Js App </h1>
-        // Build List of Posts 
         <ul>
           {props.posts.map((post, index) => {
             return (
