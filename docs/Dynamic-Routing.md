@@ -9,7 +9,9 @@ In pages section we have discussed the static route and how we can implement a p
 
 Let's start by folowing these steps. In your terminal write down these commands: :musical_keyboard: 
 1. `git clone https://github.com/GSG-K3/next-js-workshop.git`
-2. `cd next-js-workshop/example/dynamic-routing ` 
+2. *For Windows Users*:
+`cd next-js-workshop\example\dynamic-routing ` <br/>
+*Otherwise*: `cd next-js-workshop/example/dynamic-routing `
 3. `npm i`
 4. `npm run dev`
 
