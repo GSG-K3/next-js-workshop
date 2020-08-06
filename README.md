@@ -1,9 +1,11 @@
 # next-js-workshop
 ## Learning Outcomes
--
--
--
--
+In this workshop you will learn: 
+- What is Next.js and Why we use it?
+- How to create Next.js App.
+- How to make routes and linking between pages.
+- How to style your Next.js App
+- What Pre-rendering means, and how to fetch data from APIs.
 ## Schedule
   
   - 00:00 - 00:00 --[What is Next.js](./What-is-Next-js.md)
@@ -14,4 +16,5 @@
      ---- BREAK ----
 
   - 00:00 - 00:00  --[Pre-Rendering and Data Fetching](./rendering-and-Data-fetching.md)
-  ### [Resources](./Resources.md)
+## Resources
+  [Click Here to View Resources](./Resources.md)
