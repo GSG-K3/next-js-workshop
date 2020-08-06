@@ -94,6 +94,11 @@ install dependencies
 npm install
 ```
 
+run next server in development
+```
+npm run dev
+```
+
 #### open Index.js file in the Pages Folder , add the code below , to create index component with `getStaticProps` function to get List of post
 
 
@@ -146,7 +151,13 @@ export default Index;
 
 ```
 
-by using `revalidate`  the list of blog posts will be re-validated once per 10 seconds; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
+###### opne the browser and enter http://localhost:3000/ , you must see list of post 
+
+![nerxt-post](https://user-images.githubusercontent.com/7718220/89521700-a773f380-d7e8-11ea-969f-4bee8f7c6302.jpg)
+
+
+
+###### Note: by using `revalidate`  the list of blog posts will be re-validated once per 10 seconds; if you add a new blog post it will be available almost immediately, without having to re-build your app or make a new deployment.
 
 
 
