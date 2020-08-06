@@ -61,8 +61,8 @@ When linking to a route with dynamic path segments you have to provide href and 
 - `href` - The name of the `page` in the pages directory.
 - `as` - The url that will be shown in the browser.
 
-In our case we have a list of meals images on home page taken from an array with a fixed data in `assets/data`.
-
+In our case we have a list of meals images on home page taken from an array with a fixed data in `assets/data`. <br>
+Now open `/pages/index.js` file and follow the steps:
 1. import `Link` from `next/link`.
 2. Then, add a link around `img` with meal name as a url parameter like this:
 
