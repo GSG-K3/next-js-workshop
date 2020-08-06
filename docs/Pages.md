@@ -81,11 +81,13 @@ import Link from 'next/link'
 - add a button element (and don't forget to add a parent element)
 - add the Link element inside the button and link it to the home page 
 ```js
-    <Link href = '/'>
-    <a>
+<button>
+ <Link href = '/'>
+   <a>
     go back
-    </a>
-    </Link>
+   </a>
+ </Link>
+</button>
 ```
 - now you can click the button in the About page and go back to the home page :relieved:
 
