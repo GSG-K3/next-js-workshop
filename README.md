@@ -1,4 +1,4 @@
-# next-js-workshop
+# Next.js Workshop
 ## Learning Outcomes
 In this workshop you will learn: 
 - What is Next.js and Why we use it?
