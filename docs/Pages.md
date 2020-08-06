@@ -1,13 +1,7 @@
 # pages
-![pagess](https://user-images.githubusercontent.com/57558867/89291685-a6fe2000-d663-11ea-8549-3086c52c99a1.png)
-
-pages is a directory but it's not like the other directories
 
 Next.js has a file-system based router built on the concept of pages.
-
 When a file is added to the pages directory it's automatically available as a route.
-
-
 The files inside the pages directory can be used to define most common patterns.
 
 
@@ -24,8 +18,20 @@ in next.js it's different . a page is a react component exported from a file in 
    ![pagessssssyes](https://user-images.githubusercontent.com/57558867/89456497-a2715e80-d76c-11ea-8f46-2c8bb72fa551.png)
 
    ![localohostbaby](https://user-images.githubusercontent.com/57558867/89462664-70fd9080-d776-11ea-95ef-64f84e8f5319.png)
+   
+ # Links 
+ in react we used links to navigate between pages 
+ ```js 
+ <Link to="/">Home</Link>
+ ```
+ in next.js the links are used with a little difference 
+ ```js
+ <Link href="/"><a>Home</a></Link>
+ ```
+  **href** is the path inside `pages` directory. This is the only required prop.
+ 
 
-### try it by yourself 
+# try it by yourself 
 - clone this repo 
 - run these commands :
 ```
