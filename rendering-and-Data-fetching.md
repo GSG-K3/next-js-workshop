@@ -320,7 +320,7 @@ export async function getServerSideProps(context) {
 
 ```
 
-Because `getServerSideProps` is called at request time, its take parameter (context) object containing the following keys :
+Because `getServerSideProps` is called at request time, its take parameter (context) object contains the following keys :
 
 - If the page uses dynamic routes name like `[userId].js` , then params will look like `params : { userId: ... }`.
 - req: The HTTP IncomingMessage object.
