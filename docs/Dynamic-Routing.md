@@ -179,7 +179,7 @@ As a bonus you can provide each meal with a gif & quote as you see here :sunglas
 
 ```jsx
 import { useRouter } from 'next/router';
-import data from '../assets/data';
+import data from '../../assets/data';
 
 const Meal = () => {
   const router = useRouter();
