@@ -19,7 +19,6 @@
 ---
 
 # Additional Topics
-- ##### https://desosa.nl/projects/nextjs/
 - ##### [Next.js: Back to the Future](https://desosa.nl/projects/nextjs/2020/03/03/vision.html)
 - ##### [Architecting Next.js](https://desosa.nl/projects/nextjs/2020/03/14/architecture.html)
 - ##### [Material-ui with Next.js](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
