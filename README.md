@@ -15,7 +15,7 @@ In this workshop you will learn:
        ----BREAK---- 
      
   - 1:00 - 3:00  -- [Pre-Rendering and Data Fetching](./docs/rendering-and-Data-fetching.md)
-  - 3:00 - 4:00  -- [CSS And Assets](./docs/css-and-Assets.md) 
+  - 3:00 - 4:30  -- [CSS And Assets](./docs/css-and-Assets.md) 
   
 ## Resources
   [Click Here to View Resources](./docs/Resources.md)
