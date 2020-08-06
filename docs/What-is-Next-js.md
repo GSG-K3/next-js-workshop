@@ -25,13 +25,13 @@ by setting up your next.js app you'll gain an **automatic code splitting**, **fi
         + **Automatic code splitting:**
 is were your browser load/([lazy-load](https://reactjs.org/docs/code-splitting.html)) only what the user needs right now. no need for dozens of folders to be loaded here.
         + **File-system based routing**:
-        This is one of the exceptional cool features that next.js provide to have an Auto Routing. For the purpose of simplicity :point_right:  you would love working with on this in depth on [Routing section](./docs/Pages.md). just keep it in mind till then.
+        This is one of the exceptional cool features that next.js provide to have an Auto Routing. For the purpose of simplicity :point_right:  you would love working with on this in depth on [Routing section](./Pages.md). just keep it in mind till then.
         + **Hot code reloading**:
            As simple as it is :cyclone:, whenever you make changes at files, next.js will automatically apply the changes in your browser.  for more see [HMR](https://webpack.js.org/concepts/hot-module-replacement/)  
         
       
   2. **Automatic server rendering:**
- Next.js generates HTML for each page in server-side , instead of having it all done by client-side JavaScript, each generated HTML is associated with minimal JavaScript code necessary for that page, we will explain more about this topic in [data fetching and pre-rendering](./docs/rendering-and-Data-fetching.md) section.
+ Next.js generates HTML for each page in server-side , instead of having it all done by client-side JavaScript, each generated HTML is associated with minimal JavaScript code necessary for that page, we will explain more about this topic in [data fetching and pre-rendering](./rendering-and-Data-fetching.md) section.
  
   3. **SEO Compatibility**
 SEO (Search Engine Optimization) gives a good ranking on Google and offer visibility to your website. Next.js allows you to utilise server-side rendering, which makes Search engines discover your React websites much easier.
