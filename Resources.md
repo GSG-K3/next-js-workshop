@@ -22,6 +22,6 @@
 - ##### [Next.js: Back to the Future](https://desosa.nl/projects/nextjs/2020/03/03/vision.html)
 - ##### [Architecting Next.js](https://desosa.nl/projects/nextjs/2020/03/14/architecture.html)
 - ##### [Material-ui with Next.js](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
-- ##### [Next.js with Material-UI](https://itnext.io/next-js-with-material-ui-7a7f6485f671)
+- ##### [Material-ui with Next.js Article](https://itnext.io/next-js-with-material-ui-7a7f6485f671)
 - ##### [serverless-with-next5-boilerplate](https://github.com/Vadorequest/serverless-with-next5-boilerplate)
 - ##### [Custom Server](https://nextjs.org/docs/advanced-features/custom-server)
