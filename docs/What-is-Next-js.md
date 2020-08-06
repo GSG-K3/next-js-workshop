@@ -31,18 +31,17 @@ is were your browser load/([lazy-load](https://reactjs.org/docs/code-splitting.h
         
       
   2. **Automatic server rendering:**
-server-side rendering
-  3. **SEO-friendly sites**
-SEO stands for "Search engine optimization"
+ Next.js generates HTML for each page in server-side , instead of having it all done by client-side JavaScript, each generated HTML is associated with minimal JavaScript code necessary for that page, we will explain more about this topic in [data fetching and pre-rendering](./docs/rendering-and-Data-fetching.md) section.
+ 
+  3. **SEO Compatibility**
+SEO (Search Engine Optimization) gives a good ranking on Google and offer visibility to your website. Next.js allows you to utilise server-side rendering, which makes Search engines discover your React websites much easier.
 
-        <img src="https://moz-static.s3.amazonaws.com/learn/seo/international-seo.png?mtime=20170104131452" height=400 width=400>
 
-
-  4. **Optimized prefetching**
-in a production build of Next.js, whenever Link components appear in the browser’s viewport, Next.js automatically prefetches the code for the linked page in the background. By the time you click the link, the code for the destination page will already be loaded in the background, and the page transition will be near-instant!
+  4. **Optimized Prefetching**
+  Next.js automatically prefetches the code for the linked page in the background. By the time you click on the link, the code of the destination page will already be loaded in the background, and the page transition will be near-instant!
 
   5. **Easy Deployment**
- [vercel](https://vercel.com/) can deploy your next.js app quickly with a single command like a pro  :sunglasses: 
+ You can deploy your next.js app quickly like a pro  :sunglasses: using any hosting platform like (Vercel, Heroku, etc...)
  
   6. **CSS-in-JS**: 
  Next.js offers built-in support for styling using CSS-in-JS.(writing CSS in your React compoenent directly). The benefits of this feature are that it is component friendly, intuitive, automated and scalable.
