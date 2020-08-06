@@ -9,7 +9,9 @@ In pages section we have discussed the static route and how we can implement a p
 
 Let's start by folowing these steps. In your terminal write down these commands: :musical_keyboard: 
 1. `git clone https://github.com/GSG-K3/next-js-workshop.git`
-2. `cd next-js-workshop/example/dynamic-routing ` 
+2. *For Windows Users*:
+`cd next-js-workshop\example\dynamic-routing ` <br/>
+*Otherwise*: `cd next-js-workshop/example/dynamic-routing `
 3. `npm i`
 4. `npm run dev`
 
@@ -59,8 +61,8 @@ When linking to a route with dynamic path segments you have to provide href and 
 - `href` - The name of the `page` in the pages directory.
 - `as` - The url that will be shown in the browser.
 
-In our case we have a list of meals images on home page taken from an array with a fixed data in `assets/data`.
-
+In our case we have a list of meals images on home page taken from an array with a fixed data in `assets/data`. <br>
+Now open `/pages/index.js` file and follow the steps:
 1. import `Link` from `next/link`.
 2. Then, add a link around `img` with meal name as a url parameter like this:
 
@@ -102,6 +104,8 @@ export default function Home() {
 
 ```
 </details>
+
+- So if you go to `http://localhost:3000/` and clicked on one of the meals images, you should redirected to the meal page with it's name on it. 
 
 ## Client-Side Navigations
 `next/link` should be able to cover most of your routing needs, but you can also do client-side navigations without it using `next/router`.
@@ -175,7 +179,7 @@ As a bonus you can provide each meal with a gif & quote as you see here :sunglas
 
 ```jsx
 import { useRouter } from 'next/router';
-import data from '../assets/data';
+import data from '../../assets/data';
 
 const Meal = () => {
   const router = useRouter();

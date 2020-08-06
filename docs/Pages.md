@@ -1,6 +1,6 @@
 # pages
 
-Next.js has a file-system based router built on the concept of pages.
+Next.js has a file-system based router built on the concept of pages. 
 When a file is added to the pages directory it's automatically available as a route.
 The files inside the pages directory can be used to define most common patterns.
 
@@ -19,31 +19,26 @@ in next.js it's different . a page is a react component exported from a file in 
 
    ![localohostbaby](https://user-images.githubusercontent.com/57558867/89462664-70fd9080-d776-11ea-95ef-64f84e8f5319.png)
    
- # Links 
- in react we used links to navigate between pages 
+ # Link
+ in react we used link to navigate between pages 
  ```js 
  <Link to="/">Home</Link>
  ```
- in next.js the links are used with a little difference 
+ in next.js the link is used with a little difference 
  ```js
  <Link href="/"><a>Home</a></Link>
  ```
   **href** is the path inside `pages` directory. This is the only required prop.
  
 
-# try it by yourself 
-- clone this repo 
-- run these commands :
+# Create your first next.js app :sparkles:
+- create a folder and open it with vs Code 
+
+install package.json :
 ```
-cd next-js-workshop
-cd example
-cd pages example 
+npm init -y
 ```
-install dependencies 
-```
-npm install
-```
-install nextjs and react 
+install next.js and react :
 ```
 npm install next react react-dom
 ```
@@ -55,13 +50,12 @@ npm install next react react-dom
   "start": "next start"
 }
 ```
-- you can now run the project by using the command `npm run dev` 
-- inside the pages folder you can find the `index.js` file that is the default path and will include our home page 
-
+- create a folder withthe name of `pages` 
+- inside this folder create `index.js` file (this file represents our home page)
 ```
 pages/index.js = "/"
 ```
-inside the `index.js file` add the following code :
+- inside the `index.js file` add the following code :
 
 ```js
 function HomePage() {
@@ -70,6 +64,7 @@ function HomePage() {
 
 export default HomePage
 ```
+- you can now run the project by using the command `npm run dev`  
 - check the `localhost:3000`
 - now create a folder with the name of `about.js`
 - inside this folder add a function that returns any string , and don't forget to export this function 
@@ -77,5 +72,30 @@ export default HomePage
 
   it's there :fire: just as easy as that
   
-  
-  we will talk about *Index routes* and *Nested routes* later in this workshop , but this should give you a general idea of how next.js Routing works.
+### for the Link let's add a button that return us to home page 
+#### in the about page :
+- import Link 
+```js
+import Link from 'next/link'
+```
+- add a button element (and don't forget to add a parent element)
+- add the Link element inside the button and link it to the home page 
+```js
+<button>
+ <Link href = '/'>
+   <a>
+    go back
+   </a>
+ </Link>
+</button>
+```
+- now you can click the button in the About page and go back to the home page :relieved:
+
+
+  we will talk about **Index routes** and **Nested routes** later in this workshop and how Link them , but this should give you a general idea of how **next.js Routing** works.
+
+  ps: you can also install next js by useing the command :
+  ```
+   npx create-next-app . 
+  ```
+  and it will download the necessary files 

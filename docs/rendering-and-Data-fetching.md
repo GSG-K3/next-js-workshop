@@ -83,22 +83,23 @@ the Function takes `context` parameter and returns `posts` and `revalidate` as p
 
 - clone this repo
 - run these commands :
-```
-cd next-js-workshop
-cd example
-cd data-fetching-example
-```
 
-install dependencies
+1. change directory to `data-fetching` Folder
 
-```
-npm install
-```
+ 
 
-run next server in development
-```
-npm run dev
-```
+      **For Windows Users**: ```cd next-js-workshop\example\data-fetching```
+ 
+    **Otherwise**: ```cd next-js-workshop/example/data-fetching```
+
+2. install dependencies
+    ```
+    npm install
+    ```
+3. run next server in development
+    ```
+    npm run dev
+    ```
 
 #### open Index.js file in the Pages Folder , add the code below , to create index component with `getStaticProps` function to get List of post
 

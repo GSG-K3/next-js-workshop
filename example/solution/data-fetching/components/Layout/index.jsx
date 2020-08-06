@@ -4,6 +4,7 @@ export default (props) => (
   <div>
     <Head>
       <title>Blog Post Next js App</title>
+      {/* SEO proporty */}
       <meta name="keywords" content={props.keywords} />
       <meta name="description" content={props.description} />
     </Head>
