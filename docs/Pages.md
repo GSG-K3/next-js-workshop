@@ -85,7 +85,7 @@ export default HomePage
 
   it's there :fire: just as easy as that
   
-### for the Link let's add a button that return us to home page 
+### for the Link let's add a button that returns us to home page 
 #### in the about page :
 - import Link 
 ```js
