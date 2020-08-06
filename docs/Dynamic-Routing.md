@@ -105,6 +105,8 @@ export default function Home() {
 ```
 </details>
 
+- So if you go to `http://localhost:3000/` and clicked on one of the meals images, you should redirected to the meal page with it's name on it. 
+
 ## Client-Side Navigations
 `next/link` should be able to cover most of your routing needs, but you can also do client-side navigations without it using `next/router`.
 
