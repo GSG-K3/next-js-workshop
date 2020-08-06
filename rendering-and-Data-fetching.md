@@ -150,7 +150,7 @@ This JSON file will be used in client-side routing through `next/link` or `next/
 
 # `getStaticPaths` (Static Generation)
 
-`getStaticPaths` using with page has dynamic routes, this function is define a list of all paths that have to be rendered to HTML at build time.
+`getStaticPaths` use with page has dynamic routes, this function is define a list of all paths that have to be rendered to HTML at build time.
 
 to run `getStaticPaths` we must  export an `async function` called `getStaticPaths` from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by `getStaticPaths`.
 
@@ -197,12 +197,12 @@ Then Next.js will statically generate `posts/1` ,  `posts/2` , `posts/3` , `post
 > [pid].js --> { params: { pid: '1' } }
 
 # fallback
-This is The boolean property must returned from  `getStaticPaths`
+is the boolean property must returned from  `getStaticPaths`
 
 
 #### `fallback: false`
 
-If fallback is false, then any paths not returned by `getStaticPaths` will result in a 404 page. You can do this if you have a small number of paths to pre-render - so they are all statically generated during build time. It’s also useful when the new pages are not added often. If you add more items to the data source and need to render the new pages, you’d need to run the build again.
+If fallback is false, then any paths are not returned by `getStaticPaths` will result in a 404 page. You can do this if you have a small number of paths to pre-render - so they are all statically generated during build time. It’s also useful when the new pages are not added often. If you add more items to the data source and need to render the new pages, you’d need to run the build again.
 
 
 #### `fallback: true`
@@ -251,4 +251,4 @@ Because `getServerSideProps` is called at request time, its take parameter (cont
 - query: The query string.
 
 ### When should I use getServerSideProps?
-You should use `getServerSideProps` only if you need to pre-render a page whose data must be fetched at request time. The first Time will be slower than getStaticProps because the server must compute the result on every request, and the result cannot be cached by a CDN without extra configuration.
+You should use `getServerSideProps` only if you need to pre-render a page which includes a data must be fetched at request time. The first Time will be slower than getStaticProps because the server must compute the result on every request, and the result cannot be cached by a CDN without extra configuration.
