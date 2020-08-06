@@ -77,7 +77,26 @@ to run `getStaticProps` we must export an `async function` called `getStaticProp
 
 In the following example we will export `async function getStaticProps` to fetch all post from [json place holder](https://jsonplaceholder.typicode.com/posts).
 the Function takes `context` parameter and returns `posts` and `revalidate` as props to use in the component to build post List 
-           
+      
+### Let's try using `getStaticProps` in code
+
+- clone this repo
+- run these commands :
+```
+cd next-js-workshop
+cd example
+cd data-fetching-example
+```
+
+install dependencies
+
+```
+npm install
+```
+
+#### open Index.js file in the Pages Folder , add the code below , to create index component with `getStaticProps` function to get List of post
+
+
 ```js
 import axios from 'axios';
 import Link from 'next/link';
