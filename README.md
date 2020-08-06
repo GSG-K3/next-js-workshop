@@ -3,7 +3,6 @@
 ## Menu
    - [Learning Outcomes](./learning-outcomes.md)
    - [Resources](./Resources.md)
-   - [Project](./Project.md)
   
   ## Schedule
   
