@@ -20,8 +20,8 @@ by setting up your next.js app you'll gain an **automatic code splitting**, **fi
 
      <img src="https://media1.giphy.com/media/l4FGs5dbisGxm5b9e/giphy.gif" width="250" height="200">
      
-      =But wait a minute! what do you mean exactly by these weird terminologies? 🤨
-      +Here we GOO :fire:
+      -But wait a minute! what do you mean exactly by these weird terminologies? 🤨<br/>
+      =Here we GOO :fire:
         + **Automatic code splitting:**
 is were your browser load/([lazy-load](https://reactjs.org/docs/code-splitting.html)) only what the user needs right now. no need for dozens of folders to be loaded here.
         + **File-system based routing**:
