@@ -7,7 +7,7 @@ You can place the global CSS file anywhere and use any name. So let’s do the f
 * Create a top-level `styles` directory and create `global.css` inside.
 * Add the following content. It resets some styles.
 
- ```
+ ```css
  html,
 body {
   padding: 0;
@@ -34,7 +34,7 @@ a {
 ```
 
 To load global CSS files, create a file called `_app.js `under `pages` and add the following content:
- ``` 
+ ```js 
  import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -63,7 +63,7 @@ CSS Modules locally scope CSS by automatically creating a unique class name. Thi
 *  Add some styles for `Button`. To do so, we’ll use CSS Modules, which lets you import CSS files in a React component.
 * Create  CSS classe for Butto that will be useful across multiple components.
 create `components/Button.modul.css`
-```
+```css
 .button {
     color: white;
     background-color: blueviolet;
@@ -73,7 +73,7 @@ create `components/Button.modul.css`
 
 
 Then, create `components/Button.js`, importing and using the above CSS file:
-```
+```js
 import styles from './Button.module.css'
 
 export default function Button() {
@@ -89,7 +89,7 @@ export default function Button() {
 }
 ```
 Then, import `Button` in `about.js` and make it the outermost component.
-```
+```js
 import Button from './components/Button.js'
 function About() {
   return (
@@ -110,7 +110,7 @@ export default About
 We bundle styled-jsx to provide support for isolated scoped CSS. The aim is to support "shadow CSS" similar to Web Components, which unfortunately do not support server-rendering and are JS-only.
 
 The simplest one is inline styles:
-```
+```js
 import Button from './components/Button.js'
 function About() {
   return (
@@ -129,7 +129,7 @@ export default About
 ![](https://i.imgur.com/bQh7uu0.png)
 
 A component using **styled-jsx** looks like this:
-```
+```jsx
 import Button from './components/Button.js'
 function About() {
   return (
