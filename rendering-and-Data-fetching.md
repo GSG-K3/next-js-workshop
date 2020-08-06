@@ -184,8 +184,21 @@ This JSON file will be used in client-side routing through `next/link` or `next/
 
 to run `getStaticPaths` we must  export an `async function` called `getStaticPaths` from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by `getStaticPaths`.
 
+
+### Let’s try using getStaticPaths in code
+
+ - in the page folder add new folder named `posts` , and inside `posts Folder` add `[id].js` file , to create dynamic rout for posts.
+ 
+ - in `[id].js` file add the code below to create all paths of the post and get data by the id of each post
+
+
+![id-post](https://user-images.githubusercontent.com/7718220/89523013-d8edbe80-d7ea-11ea-87bb-3ef293fd0b1e.jpg)
+
+
+
 ```js
 
+// build all path for post 
 export async function getStaticPaths() {
   const res = await axios('https://jsonplaceholder.typicode.com/posts');
   
@@ -196,6 +209,40 @@ export async function getStaticPaths() {
   // return all paths to build html file 
   return { paths, fallback: true };
 }
+
+// get post data from Api by id , the id comes from getStaticPaths ,  we will explain this below
+export async function getStaticProps({ params }) {
+  try {
+    const res = await axios(
+      `https://jsonplaceholder.typicode.com/posts/${params.id}`
+    );
+    const post = res.data;
+    return { props: { post } };
+  } catch (err) {
+    return { props: {} };
+  }
+}
+
+
+
+const Post = ({ post }) => {
+  const router = useRouter();
+  // using by next js if fallback , we will explain this belowwe will explain this below 
+  if (router.isFallback) {
+    return (<h3>Loading...</h3>);
+  }
+
+  if (!post) {
+    return (<h1>No Post</h1>);
+   }
+
+  return (<div>
+            <h1>{post.title}</h1>
+            <h3> {post.body}</h3>
+        </div>);
+  };
+
+export default Post;
 
 ```
 
