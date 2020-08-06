@@ -46,8 +46,6 @@ export default MyApp
 
 This `MyApp`component is the top-level component which will be common across all the different pages. You can use this `MyApp` component to keep state when navigating between pages
 
- ![](https://i.imgur.com/ucO5bpe.png)
-
 
 In development, expressing stylesheets this way allows your styles to be automatically updated on the page as you edit them. 
 In production, all CSS files will be automatically concatenated into a single minified `.css(globals.css)` file. 
