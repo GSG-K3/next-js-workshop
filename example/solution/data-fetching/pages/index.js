@@ -1,11 +1,20 @@
-import Layout from '../components/Layout';
 import axios from 'axios';
+import Link from 'next/link';
+import Layout from '../components/Layout';
 
-// get all post to build Post Link List
-export async function getStaticProps() {
+// get all post from json place holder Api to build Post Link List
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries.
+export async function getStaticProps(context) {
   const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
   return {
+    // will be passed to the page component as props
     props: { posts: res.data },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 second
+    revalidate: 10, // In seconds
   };
 }
 
@@ -31,7 +40,7 @@ const Index = ({ posts }) => {
           {posts.map((post, index) => {
             return (
               <li key={index}>
-                <a href={`/posts/${post.id}`}>{post.title}</a>
+                <Link href={`/posts/${post.id}`}>{post.title}</Link>
               </li>
             );
           })}

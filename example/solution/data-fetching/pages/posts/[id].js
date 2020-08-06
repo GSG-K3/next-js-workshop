@@ -6,21 +6,12 @@ import { useRouter } from 'next/router';
 //Static Generation
 export async function getStaticPaths() {
   const res = await axios('https://jsonplaceholder.typicode.com/posts');
-  const posts = res.data;
-
-  const paths = [];
 
   // build just 60 path to test fallback
-  for (let i = 1; i <= 60; i++) {
-    paths.push(`/posts/${i}`);
-  }
-
-  // to build path of all post
-  // const paths =  posts.map((post, index) => {
-  //   if (index <= 60) {
-  //     return;
-  //   }
-  // });
+  const paths = res.data.map((post) => {
+    return `/posts/${post.id}`;
+  });
+  // return all paths to build html file
   return { paths, fallback: true };
 }
 
@@ -38,12 +29,17 @@ export async function getStaticProps({ params }) {
 
 //=========================================================
 //Server-side Rendering
+// if you want to try Server-side Rendering
 // export async function getServerSideProps({ params }) {
-//   const res = await axios(
-//     `https://jsonplaceholder.typicode.com/posts/${params.id}`
-//   );
-//   const post = res.data;
-//   return { props: { post } };
+//   try {
+//     const res = await axios(
+//       `https://jsonplaceholder.typicode.com/posts/${params.id}`
+//     );
+//     const post = res.data;
+//     return { props: { post } };
+//   } catch (err) {
+//     return { props: {} };
+//   }
 // }
 
 //=========================================================
