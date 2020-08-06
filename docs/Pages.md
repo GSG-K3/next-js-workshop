@@ -19,12 +19,12 @@ in next.js it's different . a page is a react component exported from a file in 
 
    ![localohostbaby](https://user-images.githubusercontent.com/57558867/89462664-70fd9080-d776-11ea-95ef-64f84e8f5319.png)
    
- # Links 
- in react we used links to navigate between pages 
+ # Link
+ in react we used link to navigate between pages 
  ```js 
  <Link to="/">Home</Link>
  ```
- in next.js the links are used with a little difference 
+ in next.js the link is used with a little difference 
  ```js
  <Link href="/"><a>Home</a></Link>
  ```
@@ -37,13 +37,13 @@ in next.js it's different . a page is a react component exported from a file in 
 ```
 cd next-js-workshop
 cd example
-cd pages example 
+cd pages-example 
 ```
-install dependencies 
+install dependencies :
 ```
-npm install
+npm init -y
 ```
-install nextjs and react 
+install nextjs and react :
 ```
 npm install next react react-dom
 ```
@@ -76,6 +76,28 @@ export default HomePage
 - now check your `localhost:3000/about` *and make sure that the file name matches the path name*
 
   it's there :fire: just as easy as that
-  
-  
-  we will talk about *Index routes* and *Nested routes* later in this workshop , but this should give you a general idea of how next.js Routing works.
+### for the Link let's add a button that return us to home page 
+#### in the about page :
+- import Link 
+```js
+import Link from 'next/link'
+```
+- add a button element (and don't forget to add a parent element)
+- add the Link element inside the button and link it to the home page 
+```js
+    <Link href = '/'>
+    <a>
+    go back
+    </a>
+    </Link>
+```
+- now you can click the button in the About page and go back to the home page :relieved:
+
+
+  we will talk about **Index routes** and **Nested routes** later in this workshop and how Link them , but this should give you a general idea of how **next.js Routing** works.
+
+  ps: you can also install next js by useing the command :
+  ```
+   npx create-next-app . 
+  ```
+  and it will download the necessary files 
