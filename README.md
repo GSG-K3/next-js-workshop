@@ -8,9 +8,9 @@ In this workshop you will learn:
 - What Pre-rendering means, and how to fetch data from APIs.
 ## Schedule
   
-  - 9:00 - 9:30 --[What is Next.js](./What-is-Next-js.md)
-  - 9:30 - 10:30 --[Pages and Routing](./Pages.md)
-  - 10:30 - 12:00 --[Dynamic Routing](./Routing.md)
+  - 9:00 - 9:30  [What is Next.js](./What-is-Next-js.md)
+  - 9:30 - 10:30 [Pages and Routing](./Pages.md)
+  - 10:30 - 12:00 [Dynamic Routing](./Dynamic-Routing.md)
  
      ---- BREAK ----
      
