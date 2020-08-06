@@ -19,13 +19,17 @@ in next.js it's different . a page is a react component exported from a file in 
 
    ![localohostbaby](https://user-images.githubusercontent.com/57558867/89462664-70fd9080-d776-11ea-95ef-64f84e8f5319.png)
    #### for example
-   if we want to add a new page `contact-us` in react we need to add it in the app page inside the Router
+   if we want to add a new page `contact-us` in react you need to 
+   1 - make a component 
+   2 - then add it in the app page inside the Router
+   
    ```js
    <Route path = '/contact-us' component = {contact-us}/>
    ```
    but in next.js you only need to add a new file `contact-us` to your pages folder 
+   
    ```
-   pages/contact-us` = "localhost:3000/contact-us"
+   pages/contact-us => "localhost:3000/contact-us"
    ```
    
  # Link
