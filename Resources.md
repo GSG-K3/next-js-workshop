@@ -16,8 +16,6 @@
 
 - ##### [Perform client-side data Fetching Next.js](https://stackoverflow.com/questions/60323380/how-to-perform-client-side-data-fetching-in-next-js)
 
----
-
 # Additional Topics
 - ##### [Next.js: Back to the Future](https://desosa.nl/projects/nextjs/2020/03/03/vision.html)
 - ##### [Architecting Next.js](https://desosa.nl/projects/nextjs/2020/03/14/architecture.html)
