@@ -67,10 +67,7 @@ npm install next react react-dom
 }
 ```
 - create a folder withthe name of `pages` 
-- inside this folder create `index.js` file (this file represents our home page)
-```
-pages/index.js = "/"
-```
+- inside this folder create `index.js` file (this file represents our home page "/")
 - inside the `index.js file` add the following code :
 
 ```js
