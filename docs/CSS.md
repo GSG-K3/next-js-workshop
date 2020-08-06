@@ -15,7 +15,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background-color: rgb(121, 233, 241);  
+  
+  background-color: rgb(111, 128, 104);  
 }
 .about-title{
   color: white;
@@ -63,8 +64,8 @@ CSS Modules locally scope CSS by automatically creating a unique class name. Thi
 create `components/Button.modul.css`
 ```css
 .button {
-    color: white;
-    background-color: blueviolet;
+     color: black;
+    background-color: white;
   }
 ```
 
@@ -101,7 +102,9 @@ function About() {
 }
 export default About
 ```
-![](https://i.imgur.com/7mFys6n.png)
+![](https://i.imgur.com/EcKwHJg.png)
+
+
 
 
 * ### CSS-in-JS
@@ -124,10 +127,11 @@ function About() {
 }
 export default About
 ```
-![](https://i.imgur.com/bQh7uu0.png)
+![](https://i.imgur.com/sKPuZPl.png)
+
 
 A component using **styled-jsx** looks like this:
-```jsx
+```js
 import Button from './components/Button.js'
 function About() {
   return (
@@ -140,7 +144,8 @@ function About() {
       
       <style jsx>{`
         .jsxClass{
-          color: red;
+          color: blue;
+          font-size:30px;
         }
        
         
@@ -154,5 +159,18 @@ export default About
 This is using a library called **styled-jsx**. It’s a “CSS-in-JS” library — it lets you write CSS within a React component, and the CSS styles will be scoped (other components won’t be affected).
 Next.js has built-in support for styled-jsx.
 
-![](https://i.imgur.com/1lTY3Co.png)
+![](https://i.imgur.com/5Sj4k90.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
