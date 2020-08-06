@@ -79,8 +79,8 @@ export default HomePage
 ```
 - you can now run the project by using the command `npm run dev`  
 - check the `localhost:3000`
-- now create a folder with the name of `about.js`
-- inside this folder add a function that returns any string , and don't forget to export this function 
+- now create a file with the name of `about.js`
+- inside this file add a function that returns any string , and don't forget to export this function 
 - now check your `localhost:3000/about` *and make sure that the file name matches the path name*
 
   it's there :fire: just as easy as that
