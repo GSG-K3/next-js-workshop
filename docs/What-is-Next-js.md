@@ -1,6 +1,6 @@
 ## What is Next.js?
 
-[Next.js](https://nextjs.org/) is a special JavaScript framework to build a modern React applications with a server-side rendering. based on that main feature it makes our life much easier by reducing page loading time, page-based routing system, not to mention its positive impact on SEO ranking. 
+[Next.js](https://nextjs.org/) is a special JavaScript framework to build a modern React applications with a server-side rendering. based on that main feature it makes our life much easier by reducing page loading time and by having page-based routing system, not to mention its positive impact on SEO ranking. 
 
 
 ### Why Next.js?
