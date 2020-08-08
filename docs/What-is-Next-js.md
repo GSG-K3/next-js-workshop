@@ -5,7 +5,7 @@
 
 ### Why Next.js?
 
-An importenat question raises here, even after what we mentioned above why should I even care about Next.js? isn't the oridanrly React app is enough for me?
+An important question raises here, even after what we mentioned above; why should I even care about Next.js? isn't the ordinary React app enough for me?
 
 :bulb: Brilliant question! 
 
@@ -16,16 +16,16 @@ It would be absolutely enough for learning purposes, however, when it comes to r
 - **Next.js is built around six core principles:**
 
   1. **Zero Configuration**: 
-by setting up your next.js app you'll gain an **automatic code splitting**, **file-system based** routing and **hot code reloading**. Say bye for these sad long loading days!
+by setting up your next.js app you'll gain an **automatic code splitting**, **file-system based** routing and **hot code reloading**. Say bye for these long boring loading days!
 
      <img src="https://media1.giphy.com/media/l4FGs5dbisGxm5b9e/giphy.gif" width="250" height="200">
      
       -But wait a minute! what do you mean exactly by these weird terminologies? 🤨<br/>
       =Here we GOO :fire:
         + **Automatic code splitting:**
-is were your browser load/([lazy-load](https://reactjs.org/docs/code-splitting.html)) only what the user needs right now. no need for dozens of folders to be loaded here.
+is were your browser load/([lazy-load](https://reactjs.org/docs/code-splitting.html)) only what user needs right now. no need for dozens of unnecessary folders to be loaded here.
         + **File-system based routing**:
-        This is one of the exceptional cool features that next.js provide to have an Auto Routing. For the purpose of simplicity :point_right:  you would love working with on this in depth on [Routing section](./Pages.md). just keep it in mind till then.
+        This is one of the exceptional cool features that next.js provides to have an Auto Routing. For the purpose of simplicity :point_right:  you would love working with this in depth on [Routing section](./Pages.md). just keep it in mind till then.
         + **Hot code reloading**:
            As simple as it is :cyclone:, whenever you make changes at files, next.js will automatically apply the changes in your browser.  for more see [HMR](https://webpack.js.org/concepts/hot-module-replacement/)  
         
