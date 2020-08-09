@@ -21,7 +21,7 @@ in next.js it's different . a page is a react component exported from a file in 
    #### for example
    if we want to add a new page `contact-us` in react you need to 
    
-   - make a component 
+   - creat a component 
     
    - then add it in the app page inside the Router
     
